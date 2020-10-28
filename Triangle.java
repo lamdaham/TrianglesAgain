@@ -27,4 +27,18 @@ public class Triangle {
 		double s = getPerimeter()/2;
 		return Math.sqrt(s*(s-side1)*(s-side2)*(s-side3));
 	}
+
+
+	public String classify() {
+		double side1 = Math.round(v1.distanceTo(v2)*10000)/10000;
+		double side2 = Math.round(v2.distanceTo(v3)*10000)/10000;
+		double side3 = Math.round(v3.distanceTo(v1)*10000)/10000;
+		if (side1==side2&&side2==side3&&side3==side1) {
+			return "equilateral";
+		} else if (side1==side2||side2==side3||side3==side1) {
+			return "isosceles";
+		} else {
+			return "scalene";
+		}
+	}
 }
