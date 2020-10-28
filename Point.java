@@ -5,4 +5,9 @@ public class Point {
 		x = X;
 		y = Y;
 	}
+
+	public Point(Point p) {
+		x = p.x;
+		y = p.y;
+	}
 }
