@@ -30,9 +30,9 @@ public class Triangle {
 
 
 	public String classify() {
-		double side1 = Math.round(v1.distanceTo(v2)*10000)/10000;
-		double side2 = Math.round(v2.distanceTo(v3)*10000)/10000;
-		double side3 = Math.round(v3.distanceTo(v1)*10000)/10000;
+		double side1 = Math.round(v1.distanceTo(v2)*10000)/10000.0;
+		double side2 = Math.round(v2.distanceTo(v3)*10000)/10000.0;
+		double side3 = Math.round(v3.distanceTo(v1)*10000)/10000.0;
 		if (side1==side2&&side2==side3&&side3==side1) {
 			return "equilateral";
 		} else if (side1==side2||side2==side3||side3==side1) {
