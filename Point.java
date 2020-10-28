@@ -10,4 +10,12 @@ public class Point {
 		x = p.x;
 		y = p.y;
 	}
+
+	public double getX(){
+		return x;
+	}
+
+	public double getY(){
+		return y;
+	}
 }
